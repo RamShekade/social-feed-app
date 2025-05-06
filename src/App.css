@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #f2f2f2;
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+  color: #111;
+  transition: all 0.3s;
+}
+
+.App.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+
+.theme-btn {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 12px 24px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.theme-btn:hover {
+  background-color: #0056b3;
+}
+
+.post-form,
+.filter-input {
+  margin: 20px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post-form input,
+.post-form textarea,
+.filter-input {
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.post-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.post-form button {
+  padding: 12px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.post-form button:hover {
+  background-color: #218838;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.post {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.App.dark .post {
+  background: #1e1e1e;
+  border: 1px solid #333;
+}
+
+.post h3 {
+  margin-top: 0;
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+.post p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.post small {
+  display: block;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.post button {
+  background-color: transparent;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.post button:hover {
+  text-decoration: underline;
+}
+
+.App.dark .post button {
+  color: #f28b82;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
